@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1267.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountController">
+   <children>
+      <Pane prefHeight="643.0" prefWidth="209.0" style="-fx-background-color: #303a4a;">
+         <children>
+            <VBox layoutY="1.0" prefHeight="643.0" prefWidth="209.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="209.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="HOME" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToHome" text="Trang chủ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="209.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="CART_PLUS" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToCategory" text="Danh Mục" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="PRODUCT_HUNT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToProduct" text="Sản phẩm" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="BOOK" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToInvoice" text="Đơn hàng" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="BUILDING_ALT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToStatitics" text="Thống kê" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="SIGN_OUT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToLogin" text="Đăng Xuất" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="USER" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToAccount" text="&gt;&gt; Tài khoản" textFill="#f86a6a">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="546.0" layoutY="9.0" text="QUẢN LÝ TÀI KHOẢN">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Separator layoutX="209.0" layoutY="55.0" prefHeight="15.0" prefWidth="1062.0" />
+      <TableView fx:id="account_table" layoutX="228.0" layoutY="118.0" prefHeight="230.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="acc_username" prefWidth="90.00003051757812" text="username" />
+          <TableColumn fx:id="acc_role" prefWidth="161.0" text="role" />
+            <TableColumn fx:id="acc_createdDate" prefWidth="177.0" text="ngày tạo" />
+            <TableColumn fx:id="acc_status" prefWidth="169.0" text="Trạng thái" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_search" layoutX="228.0" layoutY="87.0" onKeyReleased="#SearchAccount" prefHeight="25.0" prefWidth="599.0" promptText="tìm kiếm tài khoản" />
+      <Label layoutX="228.0" layoutY="366.0" text="Danh sách nhân viên">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="employee_table" layoutX="230.0" layoutY="408.0" prefHeight="223.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="empoyee_name" prefWidth="126.0" text="Họ tên" />
+            <TableColumn fx:id="employee_dob" prefWidth="118.0" text="ngày sinh" />
+            <TableColumn fx:id="employee_phone" prefWidth="118.0" text="Số điện thoại" />
+            <TableColumn fx:id="employee_address" prefWidth="118.0" text="Địa chỉ" />
+            <TableColumn fx:id="employee_image" prefWidth="122.0" text="Ảnh" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_search_Emp" layoutX="535.0" layoutY="382.0" onKeyReleased="#Search_Employee" prefHeight="25.0" prefWidth="294.0" promptText="tìm kiếm nhân viên" />
+      <Separator layoutX="843.0" layoutY="87.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="30.0" />
+      <Separator layoutX="857.0" layoutY="621.0" prefHeight="25.0" prefWidth="401.0" />
+      <Separator layoutX="1242.0" layoutY="87.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="30.0" />
+      <Separator layoutX="953.0" layoutY="76.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="865.0" layoutY="75.0" text="Chức năng">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="904.0" layoutY="129.0" text="Họ tên:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="990.0" layoutY="131.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="904.0" layoutY="169.0" text="Địa chỉ:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_add" layoutX="990.0" layoutY="171.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="905.0" layoutY="206.0" text="SĐT:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_phone" layoutX="991.0" layoutY="208.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="904.0" layoutY="242.0" text="Ng Sinh:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_dob" layoutX="1057.0" layoutY="243.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="904.0" layoutY="282.0" text="Ảnh">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="FOLDER" layoutX="991.0" layoutY="302.0" onMouseClicked="#ChooseImage" size="25" />
+      <Label layoutX="904.0" layoutY="322.0" text="Quyền:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choice_Role" layoutX="990.0" layoutY="322.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="904.0" layoutY="360.0" text="Tài khoản">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_username" layoutX="990.0" layoutY="362.0" prefHeight="25.0" prefWidth="188.0" />
+      <Button layoutX="904.0" layoutY="408.0" mnemonicParsing="false" onAction="#Btn_Add" prefHeight="43.0" prefWidth="273.0" text="Thêm Nhân viên" />
+      <Button layoutX="904.0" layoutY="463.0" mnemonicParsing="false" onAction="#Btn_Delete" prefHeight="43.0" prefWidth="273.0" text="Xóa Nhân viên" />
+      <Button fx:id="btnLock" layoutX="904.0" layoutY="517.0" mnemonicParsing="false" onAction="#Btn_LockAccount" prefHeight="43.0" prefWidth="273.0" text="Khóa tài khoản" />
+      <Button layoutX="904.0" layoutY="571.0" mnemonicParsing="false" onAction="#Btn_Update" prefHeight="43.0" prefWidth="273.0" text="Cập nhật thông tin" />
+      <Label fx:id="image_name" layoutX="1041.0" layoutY="285.0" prefHeight="15.0" prefWidth="196.0" text="chưa chọn ảnh" />
+   </children>
+</Pane>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1267.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Pane prefHeight="643.0" prefWidth="209.0" style="-fx-background-color: #303a4a;">
+         <children>
+            <VBox layoutY="1.0" prefHeight="643.0" prefWidth="209.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="209.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="HOME" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToHome" text="&gt;&gt; Trang chủ" textFill="#f86a6a">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="209.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="CART_PLUS" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToCategory" text="Danh Mục" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="PRODUCT_HUNT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToProduct" text="Sản phẩm" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="BOOK" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToInvoice" text="Đơn hàng" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="BUILDING_ALT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToStatitics" text="Thống kê" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="SIGN_OUT" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToLogin" text="Đăng Xuất" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fcfcfc" glyphName="USER" size="30">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label onMouseClicked="#switchToAccount" text="Tài khoản" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="333.0" layoutY="8.0" text="TRANG CHỦ">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Separator layoutX="209.0" layoutY="55.0" prefHeight="15.0" prefWidth="1062.0" />
+      <Label layoutX="970.0" layoutY="21.0" text="Xin Chào" textFill="#070707">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1075.0" layoutY="21.0" text="Label" textFill="#ff0909">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane id="block" layoutX="236.0" layoutY="81.0" prefHeight="86.0" prefWidth="222.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="93.0" layoutY="16.0" text="Tổng đơn hàng">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#141414" glyphName="BOOK" layoutX="23.0" layoutY="50.0" size="25" />
+            <Label layoutX="93.0" layoutY="43.0" text="16" textFill="#da0f0f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="42.0" text="đơn">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="block" layoutX="491.0" layoutY="81.0" prefHeight="86.0" prefWidth="276.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="93.0" layoutY="16.0" text="Tổng doanh thu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#141414" glyphName="BOOK" layoutX="23.0" layoutY="50.0" size="25" />
+            <Label layoutX="93.0" layoutY="43.0" text="90.000.000" textFill="#da0f0f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="block" layoutX="815.0" layoutY="81.0" prefHeight="86.0" prefWidth="313.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="93.0" layoutY="16.0" text="Số đơn hàng đã bán hôm nay">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#141414" glyphName="BOOK" layoutX="23.0" layoutY="50.0" size="25" />
+            <Label layoutX="181.0" layoutY="41.0" text="12 đơn hàng" textFill="#da0f0f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="239.0" layoutY="278.0" text="Sản phẩm bán chạy">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView layoutX="236.0" layoutY="319.0" prefHeight="287.0" prefWidth="897.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="id sản phẩm" />
+          <TableColumn prefWidth="118.0" text="Tên sản phẩm" />
+            <TableColumn prefWidth="118.0" text="giá nhập" />
+            <TableColumn prefWidth="118.0" text="giá bán" />
+            <TableColumn prefWidth="139.0" text="Số lượng còn lại" />
+            <TableColumn prefWidth="139.0" text="Ngày nhập" />
+            <TableColumn prefWidth="155.0" text="Người nhập" />
+        </columns>
+      </TableView>
+      <Button id="btn" layoutX="239.0" layoutY="200.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="166.0" text="Nhập hàng">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button id="btn" layoutX="429.0" layoutY="200.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="166.0" text="Xuất hàng">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

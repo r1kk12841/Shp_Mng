@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="211.0" layoutY="14.0" text="Đăng Nhập">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="123.0" text="Username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_user" layoutX="181.0" layoutY="122.0" prefHeight="32.0" prefWidth="323.0" />
+      <Label layoutX="79.0" layoutY="171.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_pass_back" layoutX="181.0" layoutY="170.0" onKeyReleased="#key_Back" prefHeight="32.0" prefWidth="323.0" />
+      <PasswordField fx:id="txt_pass_front" layoutX="181.0" layoutY="170.0" onKeyReleased="#Key_front" prefHeight="32.0" prefWidth="323.0" />
+      <CheckBox fx:id="show_pass" layoutX="369.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#ShowPass" text="Hiển thị mật khẩu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="204.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="40.0" prefWidth="193.0" style="-fx-background-radius: 30px;" text="Đăng Nhập" />
+   </children>
+</Pane>
