@@ -1,0 +1,171 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#dayofweek:hover{
+	-fx-background-color: #fcf2ec;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+#title{
+	-fx-background-radius: 15px;
+	-fx-background-color: white;
+}
+#pre:hover{
+	-fx-scale-y: 2;
+	-fx-scale-x: 2;
+	-fx-fill: red;
+}
+#next:hover{
+	-fx-scale-y: 2;
+	-fx-scale-x: 2;
+	-fx-fill: red;
+}
+#tabbutton{
+	-fx-border-radius: 12 12 0 0;	
+	 -fx-background-color:   #e3e4e6;
+	 -fx-border-width: 1 1 0 1;
+	 -fx-border-color: black;
+}
+#chooseColor{
+	-fx-background-radius: 15px;
+	-fx-background-color: #fcf2ec;
+}
+
+#buttonColor{
+	-fx-background-radius: 15px;
+}
+
+#notepane{
+	-fx-border-radius: 15 15 15 15;
+	-fx-background-color: transparent;
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+}
+#searchbox{
+	-fx-background-color: transparent;
+}
+#btnFooter{
+	-fx-background-color: transparent;
+	-fx-border-color: #383734;
+	-fx-border-width: 0.5 0 0.5 0;
+}
+#inforClass{
+	-fx-background-radius: 15px;
+	-fx-background-color: white;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-text-fill: #63bca9;
+}
+
+#Home_title{
+	-fx-background-color: #66ab3c;
+}
+
+#home_back_main{
+	-fx-background-color: linear-gradient(from 10px 100px to 52px 52px, #75fc60, #e3fc60 100%);
+}
+
+.table-view{
+	-fx-background-color: transparent;
+	-fx-background-radius:30;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell :hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+.table-row-cell :odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell :even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+.scroll-bar .increment-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+
+#block {
+	-fx-background-radius: 15px;
+	-fx-background-color: white;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-text-fill: #63bca9;
+}
